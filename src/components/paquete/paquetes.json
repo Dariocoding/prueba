@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_paquete_paquetes",
+  "info": {
+    "displayName": "paquetes",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "decimal",
+      "required": true
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

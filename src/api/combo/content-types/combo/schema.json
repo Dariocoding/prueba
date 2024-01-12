@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "combos",
+  "info": {
+    "singularName": "combo",
+    "pluralName": "combos",
+    "displayName": "Combo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "titulo"
+    },
+    "productos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::servicio.servicio",
+      "mappedBy": "combo"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

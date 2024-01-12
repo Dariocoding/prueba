@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "display_categorias_homes",
+  "info": {
+    "singularName": "display-categorias-home",
+    "pluralName": "display-categorias-homes",
+    "displayName": "DisplayCategoriasHome"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categorias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::categoria.categoria"
+    }
+  }
+}
